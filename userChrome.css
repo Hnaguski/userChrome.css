@@ -1,0 +1,554 @@
+@import url("file:///home/henry/.config/wpg/current.css");
+
+/*-------------------------------------------------------
+ *     /$$   /$$                    /$$    /$$         
+ *    | $$  | $$                   | $$   | $$         
+ *    | $$  | $$/$$   /$$ /$$$$$$$/$$$$$$ | $$ /$$$$$$ 
+ *    | $$$$$$$| $$  | $$/$$_____|_  $$_/ | $$/$$__  $$
+ *    | $$__  $| $$  | $|  $$$$$$  | $$   | $| $$$$$$$$
+ *    | $$  | $| $$  | $$\____  $$ | $$ /$| $| $$_____/
+ *    | $$  | $|  $$$$$$//$$$$$$$/ |  $$$$| $|  $$$$$$$
+ *    |__/  |__/\______/|_______/   \___/ |__/\_______/
+ *                                                     
+ *                                                     
+ *                                                     
+ *------------------------------------------------------*/
+/*FIREFOX BROWSER CSS v1.3 */
+/*For Firefox 58 */
+
+
+
+
+/*********************************************
+ *     _   _              ______            
+ *    | \ | |             | ___ \           
+ *    |  \| | __ ___   __ | |_/ / __ _ _ __ 
+ *    | . ` |/ _` \ \ / / | ___ \/ _` | '__|
+ *    | |\  | (_| |\ V /  | |_/ / (_| | |   
+ *    \_| \_/\__,_| \_/   \____/ \__,_|_|   
+ *                                          
+ *                                          
+ *********************************************/
+
+
+/* remove three dots button in url bar */
+
+#page-action-buttons {display: none !important;}
+
+
+/* remove triangle dropdown button */
+
+.urlbar-history-dropmarker {
+  display: none !important;
+}
+
+/* remove magnifying glass in url bar */
+#identity-box {
+  display: none !important;
+}
+
+/*Remove forward and back buttons*/
+
+#back-button {
+   display: none;
+}
+#forward-button {
+   display: none;
+}
+/* Remove go button from url bar */
+.urlbar-go-button {
+  display: none !important;
+}
+
+/* My probably way to safe way of making sure my navbar (url bar) is completely borderless */
+
+#urlbar {
+  background-color: var(--color0) !important;
+  text-align: center;
+  color: var(--color15) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+#nav-bar{
+  background-color: var(--color0) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: -2px !important;
+  margin-right: -2px !important;
+  margin-top: 0px !important;
+  margin-bottom: -1px !important;
+}
+#reload-button{
+  background-color: var(--color0) !important;
+  color: var(--color15) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+#stop-button{
+  background-color: var(--color0) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+#PanelUI-menu-button{
+  background-color: var(--color0) !important;
+  color: var(--color15) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+
+}
+#urlbar-container {
+  background-color: var(--color0) !important;
+}
+#urlbar-container: hover {
+  background-color: var(--color10) !important;
+}
+
+
+/* Makes the address bar and search bar borderless */
+
+#urlbar, .searchbar-textbox {
+  border: none !important; */
+  box-shadow: none !important;
+
+}
+
+
+/* Make url bar not curved */
+
+:root {
+  --toolbarbutton-border-radius: 0px !important;
+  
+}
+
+
+
+
+
+/***************************************************************************
+ *     _   _ _     _ _              ______       _   _                    
+ *    | | | (_)   | (_)             | ___ \     | | | |                 
+ *    | |_| |_  __| |_ _ __   __ _  | |_/ /_   _| |_| |_ ___  _ __  ___ 
+ *    |  _  | |/ _` | | '_ \ / _` | | ___ \ | | | __| __/ _ \| '_ \/ __|
+ *    | | | | | (_| | | | | | (_| | | |_/ / |_| | |_| || (_) | | | \__ \
+ *    \_| |_/_|\__,_|_|_| |_|\__, | \____/ \__,_|\__|\__\___/|_| |_|___/
+ *                            __/ |                                     
+ *                           |___/                                      
+ ***************************************************************************/
+
+
+
+/* Hide the hamburger button by default */
+
+#PanelUI-menu-button{
+  transition: 300ms !important; /* Animate icon hiding */
+  opacity: 0 !important; /* Make icon transparent */
+  -moz-margin-end: -26px !important; /* Hide icon by offsetting it */
+}
+
+
+/* Show the hamburger button on navbar hover or page load (animation/stop button) */
+
+#nav-bar:hover #PanelUI-menu-button{
+  transition: 300ms !important; /* Animate icon showing */
+  opacity: 1 !important;  /* Make the icon opaque */
+  -moz-margin-end: initial !important; /* Use initial margins to show the icon */
+}
+
+
+/* Hide the reload button by default */
+
+#reload-button {
+  transition: 300ms !important; /* Animate icon hiding */
+  opacity: 0 !important; /* Make icon transparent */
+  -moz-margin-end: -26px !important; /* Hide icon by offsetting it */
+}
+
+
+/* Show the reload button on navbar hover or page load (animation/stop button) */
+
+#nav-bar:hover #reload-button,
+#stop-reload-button[animate] > #reload-button:not([displaystop]) {
+  transition: 300ms !important; /* Animate icon showing */
+  opacity: 1 !important;  /* Make the icon opaque */
+  -moz-margin-end: initial !important; /* Use initial margins to show the icon */
+  -mox-padding-right: 10px !important;
+}
+
+
+
+
+
+/****************************
+ *     _____     _         
+ *    |_   _|   | |        
+ *      | | __ _| |__  ___ 
+ *      | |/ _` | '_ \/ __|
+ *      | | (_| | |_) \__ \
+ *      \_/\__,_|_.__/|___/
+ *                         
+ *                         
+ ***************************/
+
+
+
+/* Remove buttons to scroll through tabs */
+
+.scrollbutton-up{
+display:none !important;
+}
+.scrollbutton-down {
+display:none !important;
+}
+
+
+/* Remove list all tabs button */
+
+#alltabs-button{
+  display: none !important;
+}
+
+
+/* Only show close buttons on background tabs when hovering with the mouse
+ * Contributor(s): Timvde  */
+
+.tabbrowser-tab:not([pinned]) .tab-close-button {
+  display: none !important;
+}
+
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  display: -moz-box !important;
+}
+
+
+/* Hide tab borders and reduce tab height*/
+
+:root {
+  --tabs-border: transparent !important;
+  --tab-min-height: 29px !important;
+}
+
+
+/*fix 1px margin on right side and set color of tab bar*/
+
+#TabsToolbar{
+  margin-right: -1px !important;
+  background-color: var(--color0) !important;
+}
+
+
+/* make favicons fit better */
+
+.tab-content {
+    padding-left: 6px!important;
+    padding-right: 6px!important;
+}
+.tab-icon-image:not([pinned]) {
+  height: 20px !important;
+  width: 20px !important;
+  margin-left: 0px !important;
+  margin-right 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+
+/* remove tiny space between tabs*/
+
+.tabbrowser-tab{
+  margin-left: -1px !important;
+  background-color: green !important; /*just incase something breaks you'll know its this */
+}
+
+
+/* Hide separators between background tabs */
+
+.tabbrowser-tab::before {
+  color: purple !important; 
+  opacity: 0 !important; 
+
+  
+/* Color current tab */
+
+}
+.tab-content[selected="true"]{
+  background-color: var(--color0) !important;
+  color: var(--color15) !important;
+}
+
+/* Color unselected tab */
+
+.tab-content{
+  background-color: var(--color15) !important;
+  color: var(--color0) !important;
+}
+
+
+/* Hide border from rightmost background tab */
+
+.tabbrowser-tab::after {
+  color: green !important; 
+  opacity: 0 !important;
+  }
+
+
+/* Remove placeholder right border */
+
+.titlebar-placeholder {
+  border: blue !important;
+}
+
+
+/* Tabs take up whole tab bar*/
+
+.tabbrowser-tab[fadein]:not([pinned]) {
+  max-width: none !important;
+}
+
+
+/* get rid of weird tab line thing at the top of each tab*/
+
+.tab-line {
+	display: none;
+}
+
+/***
+ *     _____ _     _      _                    
+ *    /  ___(_)   | |    | |                   
+ *    \ `--. _  __| | ___| |__   __ _ _ __ ___ 
+ *     `--. \ |/ _` |/ _ \ '_ \ / _` | '__/ __|
+ *    /\__/ / | (_| |  __/ |_) | (_| | |  \__ \
+ *    \____/|_|\__,_|\___|_.__/ \__,_|_|  |___/
+ *                                             
+ *                                             
+ */
+
+/* Hide all sidebar headers (bookmarks, history, etc) */
+
+#sidebar-header {
+  display: none !important;
+}
+
+#sidebar-search-container {
+  background-color: var(--color0) !important;
+}
+
+#viewButton {
+  color: var(--color15) !important;
+}
+
+.popup-internal-box {
+  background-color: var(--color0) !important;
+  margin: -1px !important;
+}
+
+#search-box {
+  background-color: var(--color0) !important;
+  color: var(--color15) !important;
+}
+
+.sidebar-splitter {
+  background-color: var(--color0) !important;
+  border: none !important;
+}
+
+.sidebar-placesTreechildren {
+  background-color: var(--color0) !important;
+  color: var(--color15) !important;
+  margin-left: -15px !important;
+}
+
+/********************************************
+ *    ______ _           _ _                
+ *    |  ___(_)         | | |               
+ *    | |_   _ _ __   __| | |__   __ _ _ __ 
+ *    |  _| | | '_ \ / _` | '_ \ / _` | '__|
+ *    | |   | | | | | (_| | |_) | (_| | |   
+ *    \_|   |_|_| |_|\__,_|_.__/ \__,_|_|   
+ *                                          
+ *                                          
+ ********************************************/
+
+/* change color of findbar */
+.browserContainer > findbar {
+  background-color: var(--color0) !important
+}
+
+/* color the text of the findbar */
+.findbar-container {
+  color: var(--color15) !important;
+}
+
+.findbar-find-status {
+  color: var(--color15) !important;
+}
+
+
+/* color the close button */
+.findbar-closebutton {
+  color: var(--color15) !important;
+}
+
+/* color search textbox */
+.findbar-textbox {
+  border: none !important;
+  background-color: var(--color0) !important;
+  color: var(--color15) !important;
+}
+
+/* remove weird background of next/previous buttons*/
+.findbar-find-next{
+  background: none !important;
+  border: none !important;
+}
+.findbar-find-previous{
+  background: none !important;
+  border: none !important;
+}
+
+
+/***
+ *     _   _                 _                                ___  ___                 
+ *    | | | |               | |                               |  \/  |                 
+ *    | |_| | __ _ _ __ ___ | |__  _   _ _ __ __ _  ___ _ __  | .  . | ___ _ __  _   _ 
+ *    |  _  |/ _` | '_ ` _ \| '_ \| | | | '__/ _` |/ _ | '__| | |\/| |/ _ | '_ \| | | |
+ *    | | | | (_| | | | | | | |_) | |_| | | | (_| |  __| |    | |  | |  __| | | | |_| |
+ *    \_| |_/\__,_|_| |_| |_|_.__/ \__,_|_|  \__, |\___|_|    \_|  |_/\___|_| |_|\__,_|
+ *                                            __/ |                                    
+ *                                           |___/                                     
+ */
+
+/* Color hamburger menu */
+#appMenu-mainView {
+  background-color: var(--color0) !important;
+  color: var(--color15)
+}
+
+/* Remove the "Sign in to sync" from top of photon hamburger menu. */
+#appMenu-fxa-container{
+  display: none !important;
+}
+
+/* Remove zoom controls */
+#appMenu-zoom-controls{
+  display: none !important;
+}
+
+/* remove edit controls */
+#appMenu-edit-controls {
+  display: none !important;
+}
+
+/* remove library button */
+#appMenu-library-button {
+  display: none !important;
+}
+
+/* remove open file button */
+#appMenu-open-file-button {
+  display: none !important;
+}
+
+/* remove more button */
+#appMenu-more-button {
+  display: none !important;
+}
+
+/* remove help button */
+#appMenu-help-button {
+  display: none !important;
+}
+
+/* remove find in page button */
+#appMenu-find-button {
+  display: none !important;
+}
+
+/* remove separators */
+#widget-overflow-mainView > .panel-subview-body > toolbarseparator, .PanelUI-subView menuseparator, .PanelUI-subView toolbarseparator, .cui-widget-panelview menuseparator, .cui-widget-panel toolbarseparator {
+    -moz-appearance: none;
+    min-height: 0;
+    border-top: 0px solid var(--panel-separator-color)!important;
+    border-bottom: none;
+    margin: 0px 0!important;
+    padding: 0;
+}
+
+
+/**************************
+ *    ___  ____          
+ *    |  \/  (_)         
+ *    | .  . |_ ___  ___ 
+ *    | |\/| | / __|/ __|
+ *    | |  | | \__ \ (__ 
+ *    \_|  |_/_|___/\___|
+ *                       
+ *                       
+ **************************/
+
+
+
+/* Make loading background when opening new tab not be bright white*/
+
+.tabbrowser-tabbox {
+    background-color:  var(--color0) !important;
+}
+
+
+/*remove Scrollbars */
+ 
+#content browser
+{
+  margin-right:-12px!important;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+
+/* Remove "Send Page to Device", "Send Link to Device", 
+ * "Send Tab to Device" from context menu.
+ *
+ * Contributor(s): PilzAdam */
+
+#context-sendpagetodevice, #context-sep-sendpagetodevice,
+#context-sendlinktodevice, #context-sep-sendlinktodevice,
+#context_sendTabToDevice, #context_sendTabToDevice_separator {
+  display: none !important;
+}
+
+
+
+
+
+
+
+
